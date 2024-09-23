@@ -1,10 +1,7 @@
 import streamlit as st
 
-x = st.number_input(
-    "Insert a number", value=None, placeholder="Tuliskan angka..."
-)
-st.write("The current number is ", x)
-st.latex(r'''
-    x^2 = 
-    ''')
-st.write(x*x)
+x = st.number_input("Masukkan angka")
+st.write("Anda memasukkan angka", x)
+sx = st.text_input("Movie title", "Life of Brian")
+st.write (sx)
+
