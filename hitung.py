@@ -5,7 +5,7 @@ sx = st.text_input("Satuan", "C")
 st.write ("Anda memasukkan", x,' ',sx)
 sy = st.text_input("Dikonversi ke", "C")
 
-st.write (x,' ',sx, '= ', sy)
+st.write (x,' ',sx, '= ...', sy)
 
 
 
