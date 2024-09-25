@@ -5,4 +5,4 @@ sx = st.text_input("Satuan", "C")
 st.write("Anda menginput suhu ", x," dengan satuan ", sx )
 sy = st.text_input("konversi ke", "C")
 
-st.write("Hasil konversi dari ",x,sx," adalah ", sy )
+st.write("Hasil konversi dari ",x,sx," adalah ...", sy )
