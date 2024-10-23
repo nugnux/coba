@@ -1,6 +1,7 @@
 import streamlit as st
 import random
 import matplotlib.pyplot as plt
+import numpy as np
 
 
 st.title("Fisika Komputasi Awan")
@@ -18,8 +19,10 @@ if st.button("Data"):
         x0 = random.random() - .5
         y0 = random.random() - .5
         if ((x0**2+y0**2)>1.):
-            x0 = x0/2.
-            y0 = y0/2.
+            if y0>0:
+                y0 = np.sqrt(1-x0**2)
+            else
+                y0 = -1*(np.sqrt(1-x0**2))
             
         x.append(x0)
         y.append(y0)
