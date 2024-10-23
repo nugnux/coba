@@ -12,13 +12,13 @@ size = []
 x.append(0)
 y.append(0)
 color.append((0.,0.,0.))
-s.append(.5)
+size.append(.5)
 if st.button("Data"):
     for i in range(10):
         x.append(random.random() - .5)
         y.append(random.random() - .5)
-        c.append((random.random(),random.random(),random.random()))
-        s.append(random.random() )
+        color.append((random.random(),random.random(),random.random()))
+        size.append(random.random() )
     
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.scatter(x, y, c=color, s=size, alpha=0.5) 
