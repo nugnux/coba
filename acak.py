@@ -12,9 +12,9 @@ size = []
 x.append(0)
 y.append(0)
 color.append((0.,.7,0.))
-size.append(73)
+size.append(173)
 if st.button("Data"):
-    for i in range(10):
+    for i in range(137):
         x0 = random.random() - .5
         y0 = random.random() - .5
         if ((x0**2+y0**2)>1.):
