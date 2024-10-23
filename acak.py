@@ -11,12 +11,12 @@ color = []
 size = []
 x.append(0)
 y.append(0)
-color.append(0.,0.,0.)
+color.append((0.,0.,0.))
 if st.button("Data"):
     for i in range(10):
         x.append(random.random() - .5)
         y.append(random.random() - .5)
-        c.append(random.random(),random.random(),random.random() )
+        c.append((random.random(),random.random(),random.random()))
         s.append(random.random() )
     
 fig, ax = plt.subplots(figsize=(16, 8))
