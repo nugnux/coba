@@ -10,8 +10,9 @@ y = []
 x.append(0)
 y.append(0)
 if st.button("Data"):
-    x.append(random.random() - .5)
-    y.append(random.random() - .5)
+    for i in range(10):
+        x.append(random.random() - .5)
+        y.append(random.random() - .5)
     
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(x, y, label='Plot titik acak', color='g') 
