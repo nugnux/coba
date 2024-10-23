@@ -18,7 +18,7 @@ if st.button("Data"):
         x.append(random.random() - .5)
         y.append(random.random() - .5)
         color.append((random.random(),random.random(),random.random()))
-        size.append(10*random.random() )
+        size.append(71*random.random() )
     
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.scatter(x, y, c=color, s=size, alpha=0.5) 
