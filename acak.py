@@ -15,7 +15,7 @@ if st.button("Data"):
         y.append(random.random() - .5)
     
 fig, ax = plt.subplots(figsize=(16, 8))
-ax.plot(x, y, label='Plot titik acak', color='g') 
+ax.plot(x, y, 'go',label='Plot titik acak') 
 
 ax.set_ylabel("")
 ax.set_xlabel("x")
