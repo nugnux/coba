@@ -35,7 +35,7 @@ fig, ax = plt.subplots(figsize=(16, 16))
 ax.add_patch(circle)
 
 for i in range(1, len(x)):
-    ax.plot([0, x[i]], [0, y[i]], color='green', linestyle='--', alpha=0.5)
+    ax.plot([0, x[i]], [0, y[i]], color='green', linestyle='--', alpha=0.2)
 
 ax.scatter(x, y, c=color, s=size, alpha=0.5) 
 
