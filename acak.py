@@ -22,7 +22,7 @@ if st.button("Data"):
             y0 = y0/2.
             
         x.append(x0)
-        y.append(y0
+        y.append(y0)
         color.append((random.random(),random.random(),random.random()))
         size.append(1713*random.random() )
     
