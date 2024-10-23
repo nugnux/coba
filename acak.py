@@ -17,7 +17,7 @@ size.append(173)
 if st.button("Data"):
     for i in range(137):
         x0 = 2*(random.random() - .5)
-        y0 = 2(random.random() - .5)
+        y0 = 2*(random.random() - .5)
         if ((x0**2+y0**2)>1.):
             if y0>0:
                 y0 = np.sqrt(1-x0**2)
