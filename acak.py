@@ -19,7 +19,7 @@ if st.button("Data"):
         s.append(random.random() )
     
 fig, ax = plt.subplots(figsize=(16, 8))
-ax.plot(x, y, c=1, s=.5, alpha=0.5) 
+ax.scatter(x, y, c=color, s=size, alpha=0.5) 
 
 ax.set_ylabel("y")
 ax.set_xlabel("x")
