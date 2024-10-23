@@ -21,7 +21,7 @@ if st.button("Data"):
         if ((x0**2+y0**2)>1.):
             if y0>0:
                 y0 = np.sqrt(1-x0**2)
-            else
+            else:
                 y0 = -1*(np.sqrt(1-x0**2))
             
         x.append(x0)
