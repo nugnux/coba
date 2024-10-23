@@ -1,11 +1,13 @@
 import streamlit as st
 import random
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.patches import Circle
 
 
 st.title("Fisika Komputasi Awan")
 st.title("Nugroho Adi Pramono :sunglasses:")
+circle = Circle((0, 0), 1, color='blue', fill=False, linewidth=2, linestyle='--')
 x = []
 y = []
 color = []
@@ -30,6 +32,7 @@ if st.button("Data"):
         size.append(3713*random.random() )
     
 fig, ax = plt.subplots(figsize=(16, 16))
+ax.add_patch(circle)
 
 for i in range(1, len(x)):
     ax.plot([0, x[i]], [0, y[i]], color='gray', linestyle='--', alpha=0.5)
