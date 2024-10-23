@@ -15,8 +15,14 @@ color.append((0.,0.,0.))
 size.append(10)
 if st.button("Data"):
     for i in range(10):
-        x.append(random.random() - .5)
-        y.append(random.random() - .5)
+        x0 = random.random() - .5
+        y0 = random.random() - .5
+        if ((x0**2+y0**2)>1.):
+            x0 = x0/2.
+            y0 = y0/2.
+            
+        x.append(x0)
+        y.append(y0)
         color.append((random.random(),random.random(),random.random()))
         size.append(713*random.random() )
     
