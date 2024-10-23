@@ -7,7 +7,7 @@ from matplotlib.patches import Circle
 
 st.title("Fisika Komputasi Awan")
 st.title("Nugroho Adi Pramono :sunglasses:")
-circle = Circle((0, 0), 1, color='green', fill=False, linewidth=2, linestyle='.')
+circle = Circle((0, 0), 1, color='green', fill=False, linewidth=2, linestyle=':')
 x = []
 y = []
 color = []
