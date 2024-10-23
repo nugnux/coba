@@ -28,11 +28,12 @@ if st.button("Data"):
         y.append(y0)
         color.append((random.random(),random.random(),random.random()))
         size.append(3713*random.random() )
+    
+fig, ax = plt.subplots(figsize=(16, 16))
+
 for i in range(1, len(x)):
     ax.plot([0, x[i]], [0, y[i]], color='gray', linestyle='--', alpha=0.5)
 
-    
-fig, ax = plt.subplots(figsize=(16, 16))
 ax.scatter(x, y, c=color, s=size, alpha=0.5) 
 
 ax.set_ylabel("y")
