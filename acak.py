@@ -26,7 +26,7 @@ if st.button("Data"):
         color.append((random.random(),random.random(),random.random()))
         size.append(1713*random.random() )
     
-fig, ax = plt.subplots(figsize=(16, 8))
+fig, ax = plt.subplots(figsize=(16, 16))
 ax.scatter(x, y, c=color, s=size, alpha=0.5) 
 
 ax.set_ylabel("y")
